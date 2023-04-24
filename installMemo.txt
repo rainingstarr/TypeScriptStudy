@@ -1,0 +1,1 @@
+npm install -g typescript (컴퓨터 마다 한번)

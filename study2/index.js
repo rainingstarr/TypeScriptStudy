@@ -4,6 +4,11 @@ if (제목 != null) {
 }
 var 이미지 = document.querySelector('#image');
 if (이미지 instanceof HTMLImageElement) {
-    이미지.src = 'Newaa.jpg';
+    이미지.src = 'change.jpg';
 }
-//아니왜그러는거야대채?
+var link = document.querySelectorAll('.naver');
+link.forEach(function (item) {
+    if (item instanceof HTMLAnchorElement) {
+        item.href = 'https://kakao.com';
+    }
+});

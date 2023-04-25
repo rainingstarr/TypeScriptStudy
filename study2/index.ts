@@ -4,8 +4,13 @@ if(제목 != null){
 }
 
 let 이미지 = document.querySelector('#image');
-if(이미지 instanceof HTMLImageElement){
-    이미지.src = 'Newaa.jpg';
+if (이미지 instanceof HTMLImageElement){
+  이미지.src = 'change.jpg';
 }
 
-//아니왜그러는거야대채?
+let link = document.querySelectorAll('.naver');
+link.forEach((item) => {
+    if(item instanceof HTMLAnchorElement){
+        item.href = 'https://kakao.com';
+    }
+});
